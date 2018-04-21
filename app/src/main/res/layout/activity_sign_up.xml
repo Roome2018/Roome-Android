@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="roome.hackathon.com.roome.Activities.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_margin">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_height2"
+            android:background="@drawable/sign_user">
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/alpha_height"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/layout_margin"
+                android:text="@string/roome"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_large" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/ed_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_header"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginRight="@dimen/txt_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/back_edit_text_gray"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:minLines="1"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_small" />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_name"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginRight="@dimen/txt_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/back_edit_text_gray"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_small" />
+
+        <EditText
+            android:id="@+id/ed_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_email"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginRight="@dimen/txt_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/back_edit_text_gray"
+            android:hint="@string/mobile"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:maxEms="10"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_small" />
+
+        <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_email"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/ed_nationality"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/txt_large"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/back_edit_text_gray"
+                android:drawableRight="@drawable/arrow_down"
+                android:focusable="false"
+                android:hint="@string/nationality"
+                android:inputType="text"
+                android:padding="@dimen/layout_margin"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_small" />
+
+            <EditText
+                android:id="@+id/ed_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="@dimen/txt_large"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/back_edit_text_gray"
+                android:drawableRight="@drawable/arrow_down"
+                android:focusable="false"
+                android:hint="@string/country"
+                android:inputType="text"
+                android:padding="@dimen/layout_margin"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_mobile"
+            android:layout_marginBottom="@dimen/layout_margin"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginRight="@dimen/txt_large"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@drawable/back_edit_text_gray"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_small" />
+
+        <Button
+            android:id="@+id/bu_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed_password"
+            android:layout_margin="@dimen/txt_large"
+            android:background="@drawable/button_gradient"
+            android:text="@string/sign_up"
+            android:padding="@dimen/layout_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_title" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/myProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/txt_large"
+            android:visibility="gone"
+            app:indicatorColor="@color/blue"
+            app:indicatorName="BallTrianglePathIndicator" />
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bu_signUp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/txt_large"
+            android:layout_marginRight="@dimen/txt_large"
+            android:gravity="center"
+            android:padding="@dimen/layout_margin"
+            android:text="@string/agree"
+            android:textColor="@color/darkGray"
+            android:textSize="@dimen/text_small" />
+    </RelativeLayout>
+</ScrollView>

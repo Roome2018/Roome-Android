@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+    android:textDirection="ltr"
+    tools:context="roome.hackathon.com.roome.Activities.InfoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitXY">
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="Test">
+
+            <RelativeLayout
+                android:id="@+id/fl_imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_alignParentTop="true"
+                    android:background="#6078EA"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="?actionBarSize"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/my_room"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/txt_title"
+                            android:visibility="visible" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/ic_back"
+                            android:layout_width="?actionBarSize"
+                            android:layout_height="?actionBarSize"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:padding="15dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/ic_arrow_left" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.Toolbar>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pagerhome"
+                    android:layout_below="@id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_head" />
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:gravity="bottom|center"
+                    android:padding="5dp"
+                    app:centered="false"
+                    app:fillColor="@color/white"
+                    app:pageColor="@color/gray"
+                    app:radius="5dp"
+                    app:snap="true" />
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_available"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="Al Sahab for rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_title" />
+
+            <TextView
+                android:id="@+id/tv_subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_available"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:text="Al Sahab for rent"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/tv_numAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_available"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/green"
+                android:textSize="@dimen/txt_large" />
+
+            <TextView
+                android:id="@+id/tv_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_numAvailable"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:text="@string/available"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_available"
+                android:background="#D8D8D8" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_available"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/view1"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="@string/price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_title" />
+
+            <TextView
+                android:id="@+id/tv_num_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view1"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="10$"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_price"
+                android:background="#D8D8D8" />
+
+            <TextView
+                android:id="@+id/tv_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_available"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/view2"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="@string/number_of_people"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_title" />
+
+            <TextView
+                android:id="@+id/tv_num_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_numAvailable"
+                android:layout_below="@+id/view2"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_num_people"
+                android:background="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_noItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv_num_people"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="@string/all_rooms_are_available"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/bu_book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/recyclerview"
+                android:layout_margin="@dimen/txt_large"
+                android:background="@drawable/button_gradient"
+                android:padding="@dimen/layout_margin"
+                android:text="@string/book"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_title" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/myProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/recyclerview"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/txt_large"
+                android:visibility="gone"
+                app:indicatorColor="@color/blue"
+                app:indicatorName="BallTrianglePathIndicator" />
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

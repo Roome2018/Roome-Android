@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentPanell"
+    android:layout_width="@dimen/sectionCard"
+    android:layout_height="@dimen/sectionCard"
+    android:layout_gravity="right"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:textDirection="rtl">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/img"
+        android:layout_width="@dimen/sectionCard"
+        android:layout_height="@dimen/sectionCard"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/layout_margin"
+        fresco:roundedCornerRadius="5dp"
+        fresco:actualImageScaleType="centerCrop"
+        fresco:placeholderImage="@drawable/default_placeholder" />
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="goneView"
+        fresco:srcCompat="@drawable/ic_cancel"
+        android:visibility="gone" />
+</RelativeLayout>

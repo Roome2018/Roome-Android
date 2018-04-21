@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_small">16dp</dimen>
+    <dimen name="txt_title">20dp</dimen>
+    <dimen name="txt_large">100dp</dimen>
+    <dimen name="txt_radius">18dp</dimen>
+    <dimen name="nav_size">380dp</dimen>
+    <dimen name="nav_head">300dp</dimen>
+    <dimen name="nav_header_height">300dp</dimen>
+    <dimen name="alpha_width">60dp</dimen>
+    <dimen name="alpha_height">60dp</dimen>
+    <dimen name="alpha_txt_size">40dp</dimen>
+    <dimen name="layout_alpha_margin_top">200dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="img_height">450dp</dimen>
+    <dimen name="img_height2">350dp</dimen>
+    <dimen name="alpha_img">250dp</dimen>
+    <dimen name="sectionCard">180dp</dimen>
+    <dimen name="sectionImg">50dp</dimen>
+    <dimen name="category_item_width">180dp</dimen>
+    <dimen name="category_item_height">70dp</dimen>
+    <dimen name="image_height">250dp</dimen>
+    <dimen name="margin_icon">5dp</dimen>
+
+</resources>

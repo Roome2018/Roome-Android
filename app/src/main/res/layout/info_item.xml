@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_available"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="Al Sahab for rent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_title" />
+
+    <TextView
+        android:id="@+id/tv_subTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_available"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:text="Al Sahab for rent"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/tv_numAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:text="1"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/tv_available"
+        android:textColor="@color/green"
+        android:textSize="@dimen/txt_large" />
+
+    <TextView
+        android:id="@+id/tv_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_numAvailable"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:text="@string/available"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_small" />
+
+</RelativeLayout>

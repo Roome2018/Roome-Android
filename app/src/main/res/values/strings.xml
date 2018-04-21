@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Roome</string>
+    <string name="login">LOGIN</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="nationality">Nationality</string>
+    <string name="country">Country</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="not_have_account">Don’t have an Account ? Sign up</string>
+    <string name="conn_using_soci">Connect using a social account</string>
+    <string name="roome">ROOME</string>
+    <string name="agree">by sign up you agree the term of use and condition terms</string>
+    <string name="available">Available</string>
+    <string name="price">Price</string>
+    <string name="number_of_people">Number of people</string>
+    <string name="book">BOOK</string>
+    <string name="google_maps_key">AIzaSyA210JY41ZduROCfrNA6ad1sIvZyDWJcHU</string>
+    <!--///////  facebook_app_id  /////////-->
+    <string name="facebook_app_id">1106660176143819</string>
+    <string name="fb_login_protocol_scheme">fb1106660176143819</string>
+    <string name="mobile">Mobile</string>
+    <string name="name_validation">at least 3 alpha</string>
+    <string name="email_validation">Enter a valid e-mail address</string>
+    <string name="pass_validation">at least 6 alpha</string>
+    <string name="mobile_validation">Enter a valid mobile</string>
+    <string name="error_occurred">An error occurred please try later</string>
+    <string name="sign_successfully">Sign Up successfully :)</string>
+    <string name="logout">Are you sure you want to log out</string>
+    <string name="book_successfully">Your booking request has been sent</string>
+    <string name="require">Require</string>
+    <string name="fa_email">email</string>
+    <string name="fa_name">name</string>
+    <string name="picture">picture</string>
+    <string name="data">data</string>
+    <string name="all_rooms_are_available">All rooms are available, book now.</string>
+    <string name="titel">Titel</string>
+    <string name="owner">Owner</string>
+    <!--<string name="price">Price</string>-->
+    <string name="max_tenants">Max Tenants</string>
+    <string name="adress">Adress</string>
+    <string name="information">Info</string>
+    <string name="add_new_room">ADD NEW ROOM</string>
+    <string name="add_room_pictures">ADD Room Pictures</string>
+    <string name="my_room">My Roome</string>
+    <string name="add_room">ADD ROOM</string>
+</resources>
